@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+h1,h2,h3,h4,p,button,i,.Text{
+    font-family: "Comic Relief", "Comic Sans Ms", sans-serif;
+}
+
+h1 {
+    color: hsl(55, 58%, 93%);
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        -3px 0px 0 #000,
+        3px 0px 0 #000,
+        0px -3px 0 #000,
+        0px 3px 0 #000;
+}
+
+body {
+    background-color: hsl(46, 100%, 91%);
+}
