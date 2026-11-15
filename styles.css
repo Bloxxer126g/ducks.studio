@@ -17,6 +17,18 @@ h1 {
         0px 3px 0 #000;
 }
 
+i:hover span {
+    background: repeating-linear-gradient(90deg in hsl longer hue, rgb(226, 0, 0) 0 50%) 0/200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: r 2s linear infinite;
+}
+
+@keyframes r {
+  to {background-position: 100%}
+}
+
 body {
     background-color: hsl(46, 100%, 91%);
 }
@@ -38,6 +50,9 @@ body {
     align-items: center;
     justify-content: center;
     bottom: 10px;
+    transition: 3s ease-in-out;
+    border: 1px black solid;
+    border-radius: 0.4rem;
 }
 
 #dsc {
@@ -49,11 +64,24 @@ body {
     align-items: center;
     justify-content: center;
     bottom: 50px;
+    transition: 3s ease-in-out;
+    border: 1px black solid;
+    border-radius: 0.4rem;
 }
 
 #rbx img, #dsc img {
     width: 25px;
     margin-right: 5px;
+}
+
+#dsc img {
+    border-radius: 100rem;
+    border: none;
+}
+
+#dsc:hover, #rbx:hover {
+    border-radius: 100rem;
+    transition: 3s ease-in-out;
 }
 
 .Center {
